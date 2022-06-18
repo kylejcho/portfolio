@@ -2945,6 +2945,10 @@ button:disabled,
    aspect-ratio: 1/0.99;
 }
 
+#banner .image.about {
+   aspect-ratio: 1/1.2;
+}
+
 #banner .image img {
    pointer-events: none;
    height: 100%;
