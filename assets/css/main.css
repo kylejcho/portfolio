@@ -2156,14 +2156,14 @@ input[type='reset']:hover,
 input[type='button']:hover,
 button:hover,
 .button:hover {
-   background-color: rgba(245, 106, 106, 0.05);
+   background-color: #f9fafc;
 }
 input[type='submit']:active,
 input[type='reset']:active,
 input[type='button']:active,
 button:active,
 .button:active {
-   background-color: rgba(245, 106, 106, 0.15);
+   background-color: #f9fafc;
 }
 input[type='submit'].icon:before,
 input[type='reset'].icon:before,
@@ -2927,6 +2927,7 @@ button:disabled,
    width: 50%;
 }
 #banner .image {
+   position: relative;
    -moz-flex-grow: 0;
    -webkit-flex-grow: 0;
    -ms-flex-grow: 0;
@@ -2937,10 +2938,15 @@ button:disabled,
    flex-shrink: 0;
    display: block;
    margin: 0 0 2em 4em;
-   border: 5px solid rgba(210, 215, 217, 0.75);
-   width: 50%;
+   border: 3.5px solid #657082;
+   background-color: #79889e;
+   transform: translate(12.5px, -12.5px);
+   width: 35%;
+   aspect-ratio: 1/0.99;
 }
+
 #banner .image img {
+   pointer-events: none;
    height: 100%;
    -moz-object-fit: cover;
    -webkit-object-fit: cover;
@@ -2951,6 +2957,10 @@ button:disabled,
    -ms-object-position: center;
    object-position: center;
    width: 100%;
+   background-color: #fcfcfc43;
+   backdrop-filter: blur(2px);
+   border: 3.5px solid #66788f48;
+   transform: translate(-25px, 25px);
 }
 @media screen and (orientation: portrait) {
    #banner {
