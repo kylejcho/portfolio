@@ -2946,7 +2946,8 @@ button:disabled,
 }
 
 #banner .image.about {
-   aspect-ratio: 1/1.2;
+   aspect-ratio: 1/1;
+   width: 40%;
 }
 
 #banner .image img {
